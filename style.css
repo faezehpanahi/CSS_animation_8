@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+ text-align: center;
+ margin: 2rem auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+h1{
+  color: crimson;
+  margin: 1rem auto;
+}
+
+hr{
+  width: 50rem;
+  margin: 2rem auto;
+}
+
+.container{
+  width: 287px;
+  /* height: 88px; */
+  height: 100px;
+  background-color: rgba(80, 60, 226, 0.525);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+a{
+  width: 287px;
+  height: 100px;
+  padding: 27px 50px;
+  text-decoration: none;
+  color: rgb(202, 204, 93);
+  font-size: 2rem;
+  border: 5px solid rgb(119, 182, 172);
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+a::before{
+  content: "Hover Me!";
+  /* background-color: rgb(112, 222, 182); */
+  color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(5);
+  transition: all 2s;
+  opacity: 0;
+}
+
+a:hover::before{
+  transform: scale(1) ;
+  opacity: 1; 
+}
+
+/* a::after{
+  content: "My Dear";
+  background-color: rgb(112, 222, 182);
+  color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(-100%, 100%);
+  transition: all 2s;
+} */
+
+/* a:hover::after{
+  transform: translate(0, 0); 
+} */
